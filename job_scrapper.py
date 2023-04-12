@@ -138,7 +138,7 @@ class JobScrapper:
     def make_google_sheets(self, df):
         """Create Google sheet populated with job search result.
         """
-        # Replace the values in the following lines with your own project ID and credentials file path
+        # Replace the values in the following lines with your credentials file path
         scope = ['https://spreadsheets.google.com/feeds', 'https://www.googleapis.com/auth/drive']
         creds = service_account.Credentials.from_service_account_file(self.cred_file_path, scopes = scope)
 
